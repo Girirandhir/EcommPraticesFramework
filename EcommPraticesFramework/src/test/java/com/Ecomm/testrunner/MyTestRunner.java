@@ -11,6 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 		glue= {"com/Ecomm/stepdefination","com/Ecomm/AppHooks"},
 		plugin= {"pretty", 
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+				,"json:target/cucumber-reports/cucumber.json"
+				,"html:target/cucumber-reports/htmlReport.html"
 				}
 			
 		
