@@ -7,14 +7,15 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src/test/resources/Appfeatures/login.feature"},
+		features = {"src/test/resources/Appfeatures"},
 		glue= {"com/Ecomm/stepdefination","com/Ecomm/AppHooks"},
+		tags = "@smokeTest1",//tags= { "@BookHotel,@shop" }
 		plugin= {"pretty", 
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 				,"json:target/cucumber-reports/cucumber.json"
 				,"html:target/cucumber-reports/htmlReport.html"
 				}
-			
+		
 		
 		)
 public class MyTestRunner {
