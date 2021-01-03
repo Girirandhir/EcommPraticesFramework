@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src/test/resources/Appfeatures"},
+		features = {"src/test/resources/Appfeatures/login.feature"},
 		glue= {"com/Ecomm/stepdefination","com/Ecomm/AppHooks"},
 		plugin= {"pretty", 
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
