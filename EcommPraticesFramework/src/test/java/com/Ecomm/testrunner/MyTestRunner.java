@@ -9,9 +9,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = {"src/test/resources/Appfeatures"},
 		glue= {"com/Ecomm/stepdefination","com/Ecomm/AppHooks"},
-		tags = "@smokeTest1",//tags= { "@BookHotel,@shop" }
 		plugin= {"pretty", 
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+				"timeline:test-output-thread/"
 				,"json:target/cucumber-reports/cucumber.json"
 				,"html:target/cucumber-reports/htmlReport.html"
 				}
